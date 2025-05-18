@@ -48,4 +48,4 @@ Verificado el proceso que orquesta el **maint.tf**, se procede a lanzar el despl
 
 Finalmente podemos comprobar que la máquina virtual se ha añadido, configurado e iniciado en VirtualBox, conforme a los requisitos añadidos en el ###main.tf.
 
-![inicio_terraform](https://github.com/PPS13030588/terraform/images/virtualbox1.png)
+![inicio_terraform](https://github.com/PPS13030588/terraform/blob/main/images/virtualbox1.png)
