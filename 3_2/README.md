@@ -68,3 +68,7 @@ Una vez configurado el entorno, ya se puede lanzar el comando que desplegará la
 
 ![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/ansible_ejecutado_ok.png)
 
+Si accedemos a la IP de la máquina configurada, obtendremos la página de bienvenida de Apache.
+
+![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/apache_ansible.png)
+
