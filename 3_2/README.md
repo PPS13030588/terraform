@@ -20,3 +20,40 @@ Y se procede a copiar esta id al host que configurará ansible.
 
 ![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/ssh_añadida_ansible.png)
 
+Es el momento de crear un directorio de configuración para ansible
+
+``` sudo mkdir -p /etc/ansible ```
+
+Editamos el fichero que gestionará los hosts controlados por ansible, añadiendo la siguiente información:
+
+```yaml
+--
+- name: PPS - FMR -  Actualizar sistema e instalar Apache
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Actualizar la lista de paquetes
+      apt:
+        update_cache: yes
+
+    - name: Actualizar paquetes instalados
+      apt:
+        upgrade: dist
+        autoremove: yes
+        autoclean: yes
+
+    - name: Instalar Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Asegurarse que el servicio Apache está iniciado y habilitado
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+        
+```
+
+
