@@ -24,7 +24,13 @@ Es el momento de crear un directorio de configuración para ansible
 
 ``` sudo mkdir -p /etc/ansible ```
 
-Editamos el fichero que gestionará los hosts controlados por ansible, añadiendo la siguiente información:
+Editamos el fichero **/etc/ansible/hosts** que gestionará los hosts controlados por ansible, añadiendo la siguiente información:
+
+```yaml 
+[servidores]
+192.168.1.159 ansible_user=vagrant ansible_ssh_private_key_file=./ssh/id_rsa
+```
+Y por último, se edita el fichero **/etc/ansible/setup_ubuntu.yml** que será el **playbook** de nuestra tarea, indicando las acciones que debe completar en nuestra máquina remota, es decir, actualizar la máuqina e instalar apache.
 
 ```yaml
 --
@@ -55,5 +61,10 @@ Editamos el fichero que gestionará los hosts controlados por ansible, añadiend
         enabled: yes
         
 ```
+Una vez configurado el entorno, ya se puede lanzar el comando que desplegará las acciones con el siguiente comando: 
 
+``` ansible-playbook -i hosts setup_ubuntu.yml --ask-become-pass ```
+
+
+![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/ansible_ejecutado_ok.png)
 
