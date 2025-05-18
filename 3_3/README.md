@@ -64,3 +64,4 @@ El fichero **setup_3_3.yml** es el siguiente:
 
 ![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/ansible_ok.png)
 
+En la imagen anterior se puede ver cómo se ha ejecutado el guión, tal y como lo hemos especificado en el fichero .yml.
