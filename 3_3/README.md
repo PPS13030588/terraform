@@ -62,4 +62,5 @@ El fichero **setup_3_3.yml** es el siguiente:
         success_msg: "El contenido coincide correctamente."
 ```
 
-![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/3-3ansible_ok.png)
+![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/ansible_ok.png)
+
