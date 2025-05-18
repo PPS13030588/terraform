@@ -1,4 +1,4 @@
-## 3.1 Provisionar una máquina virtual Ubuntu 24.04 en VirtualBox mediante Terraform
+# 3.1 Provisionar una máquina virtual Ubuntu 24.04 en VirtualBox mediante Terraform
 
 En esta sección se detalla el proceso para provisionar una máquina virtual con Ubuntu 24.04 utilizando Terraform y VirtualBox como proveedor de virtualización.
 
@@ -43,15 +43,23 @@ Se ha creado un directorio específico para Terraform donde voy añadiendo los f
 
 Una vez añadido el fichero **main.tf**, desde la consola de comandos de Windows se ejecuta ``` terraform init ```
 
+
 ![inicio_terraform](https://github.com/PPS13030588/terraform/blob/main/images/terraform_init.png)
+
 
  y una vez finalizado el proceso, se puede lanzar el ``` terraform plan ``` que nos mostrará cuál va a ser el proceso de despliegue de la máquina virtual.
 
+
  ![inicio_terraform](https://github.com/PPS13030588/terraform/blob/main/images/terraform_plan.png)
 
+
 Verificado el proceso que orquesta el **maint.tf**, se procede a lanzar el despliegue planeado mediante el comando ``` terraform apply ´´´ 
+
+
 ![inicio_terraform](https://github.com/PPS13030588/terraform/blob/main/images/terraform_apply.png)
 
+
 Finalmente podemos comprobar que la máquina virtual se ha añadido, configurado e iniciado en VirtualBox, conforme a los requisitos añadidos en el **main.tf**.
+
 
 ![inicio_terraform](https://github.com/PPS13030588/terraform/blob/main/images/virtualbox1.png)
