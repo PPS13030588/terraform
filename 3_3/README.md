@@ -3,4 +3,4 @@
 - Crear un index.html con el contenido: ‘Ansible rocks’ en el directorio del servidor web para 
 poder ser mostrado y reiniciar el servicio. 
 
-- Realizar un curl al servidor web y verificar el mensaje ‘Ansib
+- Realizar un curl al servidor web y verificar el mensaje ‘Ansible rocks’. 
