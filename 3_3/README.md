@@ -70,4 +70,4 @@ Si accedemos de nuevo a la IP del servidor que estamos configurando mediante ans
 
 ![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/rockOK.png)
 
-Podríamos desplegar este contenido en multitud de máquinas de forma simultánea, con solo ejecutar una orden.
+Con este sencillo playbook, hemos desplegado un servidor web funcional con contenido personalizado. Esta automatización se puede replicar en decenas o cientos de máquinas con una sola orden, demostrando el poder y la eficiencia de Ansible en entornos reales de administración de sistemas.
