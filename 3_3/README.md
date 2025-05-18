@@ -65,3 +65,9 @@ El fichero **setup_3_3.yml** es el siguiente:
 ![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/ansibleRock.png)
 
 En la imagen anterior se puede ver cómo se ha ejecutado el guión, tal y como lo hemos especificado en el fichero .yml.
+
+Si accedemos de nuevo a la IP del servidor que estamos configurando mediante ansible, veremos que se ha añadido el contenido al index.html, tal y como hemos establecido en el playbook, dando una idea del potencial de esta herramienta. 
+
+![inicio_ansible](https://github.com/PPS13030588/terraform/blob/main/images/rockOK.png)
+
+Podríamos desplegar este contenido en multitud de máquinas de forma simultánea, con solo ejecutar una orden.
